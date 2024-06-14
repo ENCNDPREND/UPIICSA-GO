@@ -1,0 +1,80 @@
+---
+interface Props {
+	title: string;
+}
+import { ViewTransitions } from "astro:transitions";
+const { title } = Astro.props;
+
+import Nav from '../layouts/Lay.svelte';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{title}</title>
+		<ViewTransitions />
+	</head>
+	<body>
+		<nav class=" border-gray-200 bg-[#3E000F]">
+			<div
+				class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4"
+			>
+				<a
+					href="/"
+					class="flex items-center space-x-3 rtl:space-x-reverse"
+				>
+					<img src="./public/favicon.svg" class="h-8" alt="Logo" />
+					<span
+						class="self-center text-2xl font-semibold whitespace-nowrap text-white"
+						>UPIICSA GO</span
+					>
+				</a>
+			</div>
+		</nav>
+		<slot />
+
+
+		
+</body>
+		<Nav client:idle />
+
+	<style is:global>
+		/* Scrollbar para Firefox */
+		.custom-scrollbar {
+			scrollbar-width: thin; /* Ancho de la barra de desplazamiento */
+			scrollbar-color: #9ca3af #374151; /* Color de la barra de desplazamiento y la pista */
+		}
+
+		:root {
+			--accent: 49, 10, 101;
+			--accent-gradient: linear-gradient(
+				45deg,
+				rgb(var(--accent)),
+				rgb(var(--accent-light)) 30%,
+				white 60%
+			);
+		}
+
+		html {
+				font-family: system-ui, sans-serif;
+				background-size: 224px;
+				background-color: #121212;
+			}
+
+		code {
+			font-family:
+				Menlo,
+				Monaco,
+				Lucida Console,
+				Liberation Mono,
+				DejaVu Sans Mono,
+				Bitstream Vera Sans Mono,
+				Courier New,
+				monospace;
+		}
+	</style>
+</html>
