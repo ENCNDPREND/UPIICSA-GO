@@ -234,3 +234,4 @@ app.get('/alumno-info', async (req, res) => {
     res.status(500).json({ error: 'Error interno del servidor' });
   }
 });
+

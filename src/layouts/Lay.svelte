@@ -5,7 +5,7 @@ import { isLogged, Usuario } from '../UsuarioStore';
 </script>
 {#if $isLogged}
     <div
-        class="fixed bottom-0 left-0 z-50 w-full h-16 bg-[#3E000F] border-t border-[#7C001E]"
+        class="fixed bottom-0 left-0 z-50 w-full h-16 bg-[#7C001E] border-t border-[#7C001E]"
     >
         <div class="grid h-full max-w-lg grid-cols-5 mx-auto font-medium justify-center">
             <a href="/" class="inline-flex flex-col items-center justify-center px-5 hover:bg-[#004C26] group"
@@ -146,7 +146,7 @@ import { isLogged, Usuario } from '../UsuarioStore';
     </div>
     {:else}
     <div
-        class="fixed bottom-0 left-0 z-50 w-full h-16 bg-[#3E000F] border-t border-[#7C001E]"
+        class="fixed bottom-0 left-0 z-50 w-full h-16 bg-[#7C001E] border-t border-[#7C001E]"
     >
         <div class="grid h-full max-w-lg grid-cols-2 mx-auto font-medium justify-center">
             <a href="/" class="inline-flex flex-col items-center justify-center px-5 hover:bg-[#004C26] group"

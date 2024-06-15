@@ -24,22 +24,17 @@ const MateriaSchema = new Schema({
     CORREO_PROFESOR: String
 });
 
-const HorarioSchema = new Schema({
-    email: String,
-    materia: MateriaSchema
-});
-
 
 const AlumnoSchema = new Schema({
   correo: { type: String, required: true, unique: true },
   carrera: String,
   plan_estud: String,
-  materias_inscritas: [{ type: Schema.Types.ObjectId, ref: 'Materia' }]
+  materias_inscritas: [{ type: Schema.Types.ObjectId, ref: 'Materia' }],
+  Mapa: []
 });
 
 const Alumno = mongoose.model('Alumno', AlumnoSchema);
 const Materia = mongoose.model('Materia', MateriaSchema, 'AGOTA-20241');
-const Horario = mongoose.model('Horario', HorarioSchema);
 
 
-module.exports = { Materia, Horario, Alumno };
+module.exports = { Materia, Alumno };

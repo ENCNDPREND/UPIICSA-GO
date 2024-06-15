@@ -52,7 +52,7 @@
     </button>
   {:else}
     <div class="flex flex-col justify-center items-center h-[80vh] mx-4 custom-scrollbar ">
-      <div class="w-full max-w-sm m-10  border rounded-lg shadow bg-[#3e000f64] border-gray-700">
+      <div class="w-full max-w-sm m-10  border rounded-lg shadow bg-[#7C001E] border-gray-700">
         <div class="flex justify-end px-4 pt-4"></div>
         <div class="flex flex-col items-center pb-10">
           <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src={$Usuario?.photoURL ?? " "} alt="{$Usuario?.displayName} image"/>
