@@ -10,14 +10,14 @@
 
   // Obtener carreras de la base de datos al montar el componente
   onMount(async () => {
-    const response = await fetch('https://upiicsago.netlify.app/carreras');
+    const response = await fetch('http://localhost:3000/carreras');
     carreras = await response.json();
   });
 
   // Actualizar planes de estudios al seleccionar una carrera
   async function seleccionarCarrera(event) {
     carrera = event.target.value;
-    const response = await fetch(`https://upiicsago.netlify.app/planes-estudios/${carrera}`);
+    const response = await fetch(`http://localhost:3000/planes-estudios/${carrera}`);
     planes = await response.json();
     planEstud = ''; // Reiniciar plan de estudios seleccionado
   }
@@ -27,7 +27,7 @@
     event.preventDefault();
     const alumno = { correo, carrera, plan_estud: planEstud };
 
-    const response = await fetch('https://upiicsago.netlify.app/registrar-alumno', {
+    const response = await fetch('http://localhost:3000/registrar-alumno', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

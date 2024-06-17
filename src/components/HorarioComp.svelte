@@ -9,7 +9,7 @@
 
   const eliminarMateria = async (idMateria) => {
     try {
-      const response = await fetch('https://upiicsago.netlify.app/eliminar-materia-alumno', {
+      const response = await fetch('http://localhost:3000/eliminar-materia-alumno', {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json'
@@ -30,12 +30,12 @@
 
   onMount(async () => {
     try {
-      const response = await fetch(`https://upiicsago.netlify.app/alumno-materias?email=${$Usuario?.email}`);
+      const response = await fetch(`http://localhost:3000/alumno-materias?email=${$Usuario?.email}`);
       const data = await response.json(); // Suponiendo que la respuesta es un array de materias del alumno
       materias = data;
 
       // Consultar si el alumno tiene carrera
-      const infoResponse = await fetch(`https://upiicsago.netlify.app/alumno-info?email=${$Usuario?.email}`);
+      const infoResponse = await fetch(`http://localhost:3000/alumno-info?email=${$Usuario?.email}`);
       const infoData = await infoResponse.json();
       tieneCarrera = infoData.tieneCarrera;
     } catch (error) {
