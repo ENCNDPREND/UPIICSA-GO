@@ -62,27 +62,27 @@
   </div>
 </nav>
    <div id="qr-reader"></div> 
-   {#if qrCodeMessage === "Laboratorios ligeros"}
+   {#if qrCodeMessage === "https://upiicsago.netlify.app/ligeros/"}<!--Listo-->
    <Ligeros />
    {/if}
-   {#if qrCodeMessage === "Edificio de Formación Básica"}
+   {#if qrCodeMessage === "https://upiicsago.netlify.app/basicas/"}<!--Listo-->
    <Basicas />
    {/if}
-   {#if qrCodeMessage === "Edificio de Estudios Profesionales Genéricos (Sociales)"}
+   {#if qrCodeMessage === "https://upiicsago.netlify.app/sociales/"}<!--Listo-->
    <Sociales />
    {/if}
-   {#if qrCodeMessage === "Edificio de Gobierno"}
+   {#if qrCodeMessage === "https://upiicsago.netlify.app/gobierno/"}<!--Listo-->
    <Gobierno />
    {/if}
-   {#if qrCodeMessage === "Edificio de Actividades Culturales"}
+   {#if qrCodeMessage === "https://upiicsago.netlify.app/culturales/"} <!--Listo-->
    <Culturales />
    {/if}
-   {#if qrCodeMessage === "Edificio de Desarrollo Profesional Específico (Ingeniería)"}
+   {#if qrCodeMessage === "https://upiicsago.netlify.app/ingenieria/"}<!--Listo-->
    <Ingenieria />
    {/if}
-   {#if qrCodeMessage === "Gimnasio"}
+   {#if qrCodeMessage === "https://upiicsago.netlify.app/gimnasio/"}<!--Listo-->
    <Gimnasio />
    {/if}
-   {#if qrCodeMessage === "Edificio de Competencias Integrales e Institucionales (Pesados)"}
+   {#if qrCodeMessage === "https://upiicsago.netlify.app/pesados/"}<!--Listo-->
    <Pesados />
    {/if}

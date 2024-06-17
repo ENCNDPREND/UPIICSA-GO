@@ -5,5 +5,9 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Welcome">
 	<main>
 	<GimnasioC client:idle />
+	<div class="flex flex-col justify-center items-center h-[80vh] mx-4 custom-scrollbar">
+		<h1 class="mb-6 text-4xl font-extrabold leading-none tracking-tight  md:text-5xl lg:text-6xl text-white">Bienvenido a UPIICSA GO</h1>
+		<p class="mb-6 text-lg font-normal text-gray-400 lg:text-xl sm:px-16 xl:px-48 "> Iniciar sesión para acceder a tu horario.</p>
+		<a href="/perfil"  class="mt-4 px-4 py-2 bg-[#00994C] hover:bg-[#205f3f] text-white rounded-md focus:outline-none">Iniciar sesión</a> </div>
 	</main>
 </Layout>
