@@ -44,6 +44,19 @@
   });
 </script>
 
+<nav class=" border-gray-200 bg-[#7C001E]">
+  <div
+    class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4"
+  >
+    <a
+      href="/"
+      class="flex items-center space-x-3 rtl:space-x-reverse"
+    >
+      <img src="/logo.svg" class="h-8" alt="Logo" />
+      
+    </a>
+  </div>
+</nav>
 {#if !tieneCarrera}
   <div class="flex flex-col justify-center items-center h-[25vh] mx-4 custom-scrollbar">
     <a href="/anadirAlumno" type="button" class="px-5 py-3 text-base font-medium text-center inline-flex items-center text-white bg-[#00994C] rounded-lg hover:bg-[#004C26] focus:ring-4 focus:outline-none focus:bg-[#80CCA6] ">

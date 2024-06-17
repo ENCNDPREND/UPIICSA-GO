@@ -44,6 +44,19 @@
 </script>
 
 
+<nav class=" border-gray-200 bg-[#7C001E]">
+  <div
+    class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4"
+  >
+    <a
+      href="/"
+      class="flex items-center space-x-3 rtl:space-x-reverse"
+    >
+      <img src="/logo.svg" class="h-8" alt="Logo" />
+      
+    </a>
+  </div>
+</nav>
 <div class="flex flex-col justify-center items-center h-[80vh] mx-4 custom-scrollbar">
   {#if !$isLogged}
     <button class="btn-google" on:click={login}>

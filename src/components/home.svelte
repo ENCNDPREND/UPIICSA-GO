@@ -3,6 +3,21 @@ import { isLogged, Usuario } from '../UsuarioStore';
 
 
 </script>
+
+
+<nav class=" border-gray-200 bg-[#7C001E]">
+  <div
+    class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4"
+  >
+    <a
+      href="/"
+      class="flex items-center space-x-3 rtl:space-x-reverse"
+    >
+      <img src="/logo.svg" class="h-8" alt="Logo" />
+      
+    </a>
+  </div>
+</nav>
 {#if $isLogged}
 <div class="flex flex-col justify-center items-center h-[80vh] mx-4 custom-scrollbar">
   <h1 class="mb-6 text-4xl font-extrabold leading-none tracking-tight  md:text-5xl lg:text-6xl text-white">Bienvenido a UPIICSA GO</h1>
