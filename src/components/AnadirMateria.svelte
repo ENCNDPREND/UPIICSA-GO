@@ -10,7 +10,7 @@
   
     const buscarMaterias = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/buscar-materias?q=${query}&email=${$Usuario.email}`);
+        const response = await fetch(`https://upiicsago.netlify.app/buscar-materias?q=${query}&email=${$Usuario.email}`);
         const data = await response.json();
         resultados.set(data);
       } catch (error) {
@@ -20,7 +20,7 @@
   
     const agregarMateria = async (idMateria) => {
       try {
-        const response = await fetch('http://localhost:3000/agregar-materia-alumno', {
+        const response = await fetch('https://upiicsago.netlify.app/agregar-materia-alumno', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
